@@ -1,10 +1,10 @@
 import styles from "./Rodape.module.css";
-import marcaRegistrada from "assets/marca_registrada.svg";
+import  MarcaRegistrada from "assets/marca_registrada.svg?react";
 
 export default function Rodape() {
   return (
     <footer className={styles.rodape}>
-      <img src={marcaRegistrada} alt="Imagem de marca registrada" />
+      <MarcaRegistrada />
       Desenvolvido por Fábio Júnior junto a Alura
     </footer>
   );
