@@ -11,8 +11,8 @@ function AppRoutes() {
       <Menu />
       <Routes>
         <Route path="/" element={<PaginaPadrao />}>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/sobremim" element={<SobreMim />} />
+          <Route index element={<Inicio />} />
+          <Route path="sobremim" element={<SobreMim />} />
         </Route>
         {/* 
           Na rota "/", a estrutura a ser renderiza é:
@@ -24,7 +24,7 @@ function AppRoutes() {
           <PaginaPadrao>
             <Inicio />
           </PaginaPadrao>
-          
+
         */}
         <Route path="*" element={<div>Página não encontrada</div>} />
       </Routes>
