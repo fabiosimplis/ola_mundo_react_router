@@ -1,6 +1,7 @@
 import styles from "./Banner.module.css";
 import circuloColorido from "../../assets/circulo_colorido.png";
-export function Banner() {
+
+export default function Banner() {
   return (
     <div className={styles.banner}>
       <div className={styles.apresentacao}>
