@@ -15,7 +15,6 @@ function AppRoutes() {
         <Route path="/" element={<PaginaPadrao />}>
           <Route index element={<Inicio />} />
           <Route path="sobremim" element={<SobreMim />} />
-          <Route path="posts/:id" element={<Post />} />
         </Route>
         {/* 
           Na rota "/", a estrutura a ser renderiza é:
@@ -29,6 +28,7 @@ function AppRoutes() {
           </PaginaPadrao>
 
         */}
+        <Route path="posts/:id" element={<Post />} />
         <Route path="*" element={<NaoEncontrada />} />
       </Routes>
       <Rodape />
